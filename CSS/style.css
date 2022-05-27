@@ -204,7 +204,7 @@ header {
   z-index: 5;
   width: 412px;
   height: 288px;
-  background: linear-gradient(108.11deg, #e1dddd 1%, rgba(247, 246, 246, 0.777) 1%), url(../IMG/pic_1.png);
+  background: linear-gradient(108.11deg, #e1dddd 1%, rgba(247, 246, 246, 0.777) 1%), url(../IMG/pic11.jpg);
   color: black;
   border-radius: 10px;
 }
@@ -304,7 +304,7 @@ header {
   line-height: 35px;
   font-weight: 700;
   text-align: center;
-  margin: 0px 0px 63px 0px;
+  margin: 0px 0px 60px 0px;
 }
 
 .second_div .second_div_pretitle .pretitle_link {
@@ -330,14 +330,14 @@ header {
 
 .second_div .second_div_main_text {
   display: inline-block;
-  margin: 50px 0px 0px 75px;
+  margin: 30px 0px 0px 70px;
 }
 
 .second_div .second_div_main_text .second_div_main_list {
   font-size: 22px;
   line-height: 45px;
   color: #17181C;
-  margin: 0px 0px 55px 0px;
+  margin: 0px 0px 45px 0px;
 }
 
 .second_div .second_div_main_text .second_div_main_list li p {
@@ -370,7 +370,7 @@ header {
 }
 
 .second_div .second_div_main_text .second_div_form .telephone_submit {
-  margin: 0px 0px 0px 71px;
+  margin: 0px 0px 54px 71px;
   width: 200px;
   height: 40px;
   background-color: #FFD300;
@@ -381,12 +381,13 @@ header {
 }
 
 .third_div {
-  margin: 1px 0px 0px 0px;
+  background: url(../IMG/bg_pic.jpg);
+  padding: 94px 0px 0px 0px;
   position: relative;
 }
 
 .third_div .third_div_title {
-  margin: 94px 0px 163px 0px;
+  margin: 0px 0px 163px 0px;
   text-align: center;
   font-size: 45px;
   line-height: 55px;
@@ -400,7 +401,7 @@ header {
 
 .third_div .third_div_left-options {
   max-width: 300px;
-  margin: 0px 43px 0px 300px;
+  margin: 0px 70px 0px 270px;
 }
 
 .third_div .left_options {
@@ -425,7 +426,7 @@ header {
   display: inline-block;
   width: 298px;
   height: 379px;
-  margin: 30px 80px 233px 0px;
+  margin: 20px 100px 225px 0px;
 }
 
 .third_div .third_div_right-options .right_options {
@@ -480,7 +481,7 @@ header {
 }
 
 .fifth_div {
-  background: #E5E5E5;
+  background-color: #E5E5E5;
 }
 
 .fifth_div .fifth_div_title {
