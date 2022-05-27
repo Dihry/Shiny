@@ -552,6 +552,10 @@ header {
   padding: 0px 20px;
 }
 
+.sixth_div .sixth_list span:hover {
+  background-color: #a29d9a;
+}
+
 .sixth_div .sixth_list span p {
   display: inline-block;
 }
@@ -631,6 +635,11 @@ footer .string {
   text-decoration: none;
 }
 
+.footer_main_block .footer_main_block_list .footer_list li :hover {
+  color: red;
+  text-decoration: underline;
+}
+
 .footer_main_block .footer_main_block_list .tele {
   color: #FFD300;
   display: -webkit-box;
@@ -641,6 +650,10 @@ footer .string {
           align-items: flex-end;
   padding-right: 15px;
   text-decoration: none;
+}
+
+.footer_main_block .footer_main_block_list .tele:hover {
+  text-decoration: underline;
 }
 
 .footer_main_block .footer_main_block_list .tele .phone_img {

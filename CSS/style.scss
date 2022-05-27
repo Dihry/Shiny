@@ -286,7 +286,6 @@ header{
          }
       }
    }
-
 }
 
 .third_div{
@@ -433,6 +432,9 @@ header{
          margin: 0 auto;
          margin-bottom: 5px;
          padding: 0px 20px;
+         &:hover{
+            background-color: #a29d9a;
+         }
          p{
             display: inline-block;
             
@@ -493,6 +495,10 @@ footer{
             line-height: 22px;
             text-decoration: none;
          }
+         & li :hover{
+            color: red;
+            text-decoration: underline;
+         }
       }
       .tele{
          color: #FFD300;
@@ -500,6 +506,9 @@ footer{
          align-items: flex-end;
          padding-right: 15px;
          text-decoration: none;
+         &:hover{
+            text-decoration: underline;
+         }
          .phone_img{
             margin: 0px 5px 0px 0px;
          }
