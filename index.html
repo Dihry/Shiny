@@ -16,10 +16,10 @@
             </div>
             <div class="nav-item__list">
                <ul>
-                  <li><a href="#">Услуги</a></li>
-                  <li><a href="#">Преимущества</a></li>
-                  <li><a href="#">Работы</a></li>
-                  <li><a href="#">Цены</a></li>
+                  <li><a href="#id_services">Услуги</a></li>
+                  <li><a href="#id_benefits">Преимущества</a></li>
+                  <li><a href="#id_works">Работы</a></li>
+                  <li><a href="#id_prices">Цены</a></li>
                </ul>
             </div>
             <div class="nav-item__phone">
@@ -92,7 +92,7 @@
    <div class="services">
       <div class="services__header">
          <div class="services__title">
-            <h2 class="main_title">Для юридических лиц</h2>
+            <h2 class="main_title" id="id_services">Для юридических лиц</h2>
          </div>
          <div class="services__subtitle">
             <p><span>Акция!</span>Первое авто бесплатно!</p>
@@ -117,16 +117,16 @@
                   <p>Оплата после выполнения работ</p>
                </li>
             </ul>
-            <form action="#" class="services__form">
-               <p class="form_p mobile">Ваш телефон</p>
-               <input type="tel" class="phone_number">
+            <form action="get" class="services__form">
+               <p class="form_p mobile">Ваш телефон:</p>
+               <input type="tel" class="phone_number" pattern="\d{10}" placeholder="0631111111" required>
                <button type="submit" class="services__submit">Оформить заявку</button>
             </form>
          </div>
 
    <div class="benefits">
       <div class="benefits__title">
-         <h2 class="main_title">Преимущества мобильного шиномонтажа</h2>
+         <h2 class="main_title" id="id_benefits">Преимущества мобильного шиномонтажа</h2>
       </div>
       <div class="benefits__main-block">
          <div class="benefits__left-options">
@@ -157,16 +157,18 @@
       </div>
       <div class="callback__form">
          <form action="#">
-            <p class="callback_p mobile">Ваш телефон</p>
-            <input type="tel" class="phone-number" >
-            <button class="callback__form_button">Оформить заявку</button>
+            <p class="callback_p mobile">Ваш телефон:</p>
+            <div class="callback__main-form">
+               <input pattern="\d{10}" type="tel" class="phone-number" maxlength="10" placeholder="0631111111" required>
+               <button class="callback__form_button" type="submit">Оформить заявку</button>
+            </div> 
          </form>
       </div>
    </div>
 
    <div class="works">
       <div class="works__title">
-         <h2 class="main_title">Дополнительные работы</h2>
+         <h2 class="main_title" id="id_works">Дополнительные работы</h2>
       </div>
       <div class="works__main">
          <div class="works__img">
@@ -190,7 +192,7 @@
 
    <div class="prices">
       <div class="prices__title">
-         <h2 class="main_title">ЦЕНЫ НА МОБИЛЬНЫЙ ШИНОМОНТАЖ</h2>
+         <h2 class="main_title" id="id_prices">ЦЕНЫ НА МОБИЛЬНЫЙ ШИНОМОНТАЖ</h2>
       </div>
       <div class="prices__main">
          <ul class="prices__list">
@@ -258,10 +260,10 @@
          <div class="footer__main">
                <img src="IMG/Logo.svg" alt="#" class="logo">
                <ul class="footer__list">
-                  <li><a href="#">Услуги</a></li>
-                  <li><a href="#">Преимущества</a></li>
-                  <li><a href="#">Работы</a></li>
-                  <li><a href="#">Цены</a></li>
+                  <li><a href="#id_services">Услуги</a></li>
+                  <li><a href="#id_benefits">Преимущества</a></li>
+                  <li><a href="#id_works">Работы</a></li>
+                  <li><a href="#id_prices">Цены</a></li>
                </ul>
                <a href="#" class="phone_logo"><img src="IMG/Vector.svg" alt="" class="phone_img">+38-(063)-19-88-496</a>
          </div>

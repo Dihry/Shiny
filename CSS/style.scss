@@ -343,6 +343,7 @@ header{
                width: 300px;
                height: 30px;
                font-size: 24px;
+               text-align: center;
             }
             .services__submit {
                margin: 0px 0px 54px 71px;
@@ -437,21 +438,28 @@ header{
       .callback_p{
          margin: 0px 0px 8px 580px;
       }
-      .phone-number{
-         margin: 0px 0px 107px 552px;
-         width: 300px;
-         height: 60px;
-      }
-      .callback__form_button{
-         width: 250px;
-         height: 60px;
-         background: #17181C;
-         border-radius: 5px;
-         color: #FFFFFF;
-         margin: 0px 0px 0px 18px;
-         &:hover{
-            border: 2px solid red;
-            color: red;
+      .callback__main-form{
+         display: flex;
+         .phone-number {
+            box-sizing: border-box;
+            margin: 0px 0px 107px 552px;
+            width: 300px;
+            height: 66px;
+            font-size: 40px;
+            line-height: 45px;
+            text-align: center;
+         }
+         .callback__form_button {
+            width: 250px;
+            height: 66px;
+            background: #17181C;
+            border-radius: 5px;
+            color: #FFFFFF;
+            margin: 0px 0px -5px 18px;
+            &:hover {
+               border: 2px solid red;
+               color: red;
+            }
          }
       }
    }
@@ -540,7 +548,7 @@ footer{
          justify-content: space-between;
          margin: 0px 0px 40px 0px;
          .footer__list {
-            width: 300px;
+            width: 400px;
             display: flex;
             justify-content: space-between;
             align-items: flex-end;

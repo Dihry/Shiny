@@ -471,6 +471,7 @@ header {
   width: 300px;
   height: 30px;
   font-size: 24px;
+  text-align: center;
 }
 
 .services .services__main .services__options .services__form .services__submit {
@@ -577,22 +578,33 @@ header {
   margin: 0px 0px 8px 580px;
 }
 
-.callback__form .phone-number {
-  margin: 0px 0px 107px 552px;
-  width: 300px;
-  height: 60px;
+.callback__form .callback__main-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.callback__form .callback__form_button {
+.callback__form .callback__main-form .phone-number {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px 0px 107px 552px;
+  width: 300px;
+  height: 66px;
+  font-size: 40px;
+  line-height: 45px;
+  text-align: center;
+}
+
+.callback__form .callback__main-form .callback__form_button {
   width: 250px;
-  height: 60px;
+  height: 66px;
   background: #17181C;
   border-radius: 5px;
   color: #FFFFFF;
-  margin: 0px 0px 0px 18px;
+  margin: 0px 0px -5px 18px;
 }
 
-.callback__form .callback__form_button:hover {
+.callback__form .callback__main-form .callback__form_button:hover {
   border: 2px solid red;
   color: red;
 }
@@ -707,7 +719,7 @@ footer .footer__container .footer__main {
 }
 
 footer .footer__container .footer__main .footer__list {
-  width: 300px;
+  width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
