@@ -11,23 +11,15 @@
    <header>
       <div class="header__container">
          <div class="header__nav">
-            <div class="nav-item__logo">
-               <img src="IMG/Logo.svg" alt="#" class="logo">
-            </div>
-            <div class="nav-item__list">
-               <ul>
-                  <li><a href="#id_services">Услуги</a></li>
-                  <li><a href="#id_benefits">Преимущества</a></li>
-                  <li><a href="#id_works">Работы</a></li>
-                  <li><a href="#id_prices">Цены</a></li>
-               </ul>
-            </div>
-            <div class="nav-item__phone">
-               <a href="#" class="tel">+38-(063)-19-88-496</a>
-            </div>
-            <div class="nav-item__button">
-               <a href="#" ><span>Заказать звонок</span></a>
-            </div>
+            <img src="IMG/Logo.svg" alt="#" class="nav__logo">
+            <ul class="nav__list">
+               <li><a href="#id_services">Услуги</a></li>
+               <li><a href="#id_benefits">Преимущества</a></li>
+               <li><a href="#id_works">Работы</a></li>
+               <li><a href="#id_prices">Цены</a></li>
+            </ul>
+            <a href="#" class="nav__phone">+38-(063)-19-88-496</a>
+            <a href="#id_callback" class="nav__button"><span>Заказать звонок</span></a>
          </div>
          <div class="header__main">
             <div class="header__title">
@@ -52,7 +44,7 @@
                   </div>
                </div>
             </div>
-            <div class="item-cards">
+            <div class="item-cards item-cards2">
                <div class="item-cards__price-image">
                   <img src="IMG/от 199₽.svg" alt="" class="imgs">
                </div>
@@ -63,7 +55,7 @@
                     <img src="IMG/001-sedan.svg" alt="">
                </div>
             </div>
-            <div class="item-cards">
+            <div class="item-cards item-cards3">
                <div class="item-cards__price-image">
                   <img src="IMG/от 299₽.svg" alt="">
                </div>
@@ -74,7 +66,7 @@
                   <img src="IMG/002-jeep 1.svg" alt="">
                </div>
             </div>
-            <div class="item-cards">
+            <div class="item-cards item-cards4">
               <div class="item-cards__price-image">
                   <img src="IMG/от 399₽.svg" alt="">
                </div>
@@ -95,7 +87,7 @@
             <h2 class="main_title" id="id_services">Для юридических лиц</h2>
          </div>
          <div class="services__subtitle">
-            <p><span>Акция!</span>Первое авто бесплатно!</p>
+            <p><span class="services__stock">Акция!</span>Первое авто бесплатно!</p>
          </div>
       </div>
       <div class="services__main">
@@ -104,73 +96,65 @@
          </div>
          <div class="services__options">
             <ul class="services__list">
-               <li>
-                  <p>Работа с НДС</p>
-               </li>
-               <li>
-                  <p>Комплексное обслуживание автопарков</p>
-               </li>
-               <li>
-                  <p>Заключение договора</p>
-               </li>
-               <li>
-                  <p>Оплата после выполнения работ</p>
-               </li>
+               <li><p>Работа с НДС</p></li>
+               <li><p>Комплексное обслуживание автопарков</p></li>
+               <li><p>Заключение договора</p></li>
+               <li><p>Оплата после выполнения работ</p></li>
             </ul>
-            <form action="get" class="services__form">
+            <div class="services__form">
                <p class="form_p mobile">Ваш телефон:</p>
-               <input type="tel" class="phone_number" pattern="\d{10}" placeholder="0631111111" required>
+               <input pattern="\d{10}" type="tel" class="phone_number" maxlength="10" placeholder="0631111111" required>
                <button type="submit" class="services__submit">Оформить заявку</button>
-            </form>
+            </div>
          </div>
+      </div>
+   </div>
 
    <div class="benefits">
       <div class="benefits__title">
          <h2 class="main_title" id="id_benefits">Преимущества мобильного шиномонтажа</h2>
       </div>
       <div class="benefits__main-block">
-         <div class="benefits__left-options">
-            <ul class="benefits__left-list">
-               <li>Онлайн запись</li>
-               <li>Бесконтактное <br> обслуживание</li>
-               <li>Сертифицированное <br> оборудование и мастера</li>
-               <li>Гарантия на все виды <br> работ 365 дней</li>
-            </ul>
-         </div>
+         <ul class="benefits__left-options">
+            <li>Онлайн запись</li>
+            <li>Бесконтактное <br> обслуживание</li>
+            <li>Сертифицированное оборудование и мастера</li>
+            <li>Гарантия на все виды работ 365 дней</li>
+         </ul>
          <div class="benefits__img">
             <img src="IMG/Layer 71 1.svg" alt="#">
          </div>
-         <div class="benefits__right-options">
-            <ul class="benefit__right-list">
-               <li>Все типы оплат</li>
-               <li>Без очередей</li>
-               <li>В удобном месте</li>
-               <li>В удобном месте</li>
-            </ul>
-         </div>
+         <ul class="benefit__right-options">
+            <li>Все типы оплат</li>
+            <li>Без очередей</li>
+            <li>В удобном месте</li>
+            <li>В удобном месте</li>
+         </ul>
       </div>
    </div>
 
    <div class="callback">
-      <div class="callback__title">
-         <h2 class="main_title">МОБИЛЬНЫЙ ШИНОМОНТАЖ 24 ЧАСА В СУТКИ</h2>
-      </div>
-      <div class="callback__form">
-         <form action="#">
-            <p class="callback_p mobile">Ваш телефон:</p>
-            <div class="callback__main-form">
-               <input pattern="\d{10}" type="tel" class="phone-number" maxlength="10" placeholder="0631111111" required>
-               <button class="callback__form_button" type="submit">Оформить заявку</button>
-            </div> 
-         </form>
+      <div class="callback__container">
+         <div class="callback__title">
+            <h2 class="main_title" id="id_callback">МОБИЛЬНЫЙ ШИНОМОНТАЖ 24 ЧАСА В СУТКИ</h2>
+         </div>
+         <div class="callback__form">
+            <form action="#">
+               <p class="callback_p mobile">Ваш телефон:</p>
+               <div class="callback__main-form">
+                  <input pattern="\d{10}" type="tel" class="phone-number" maxlength="10" placeholder="0631111111" required>
+                  <button class="callback__form_button" type="submit">Оформить заявку</button>
+               </div>
+            </form>
+         </div>
       </div>
    </div>
 
    <div class="works">
-      <div class="works__title">
-         <h2 class="main_title" id="id_works">Дополнительные работы</h2>
-      </div>
       <div class="works__main">
+         <div class="works__title">
+            <h2 class="main_title" id="id_works">Дополнительные работы</h2>
+         </div>
          <div class="works__img">
             <img src="IMG/Ресурс 3@2x 1.svg" alt="" class="fifth_div_img">
          </div>
@@ -191,85 +175,52 @@
    </div>
 
    <div class="prices">
-      <div class="prices__title">
-         <h2 class="main_title" id="id_prices">ЦЕНЫ НА МОБИЛЬНЫЙ ШИНОМОНТАЖ</h2>
-      </div>
       <div class="prices__main">
-         <ul class="prices__list">
-            <li><span class="prices__left_column">Снятие и установка колеса
-               <p class="prices__right_column">120 ₽</p></span>
-            </li>
-            <li><span class="prices__left_column">Демонтаж/монтаж шины
-               <p class="prices__right_column">125 ₽</p></span>
-            </li>
-            <li><span class="prices__left_column">Балансировка колеса с учетом грузиков
-               <p class="prices__right_column">105 ₽</p></span>
-            </li>
-            <li><span class="prices__left_column">Установка клапана резинового
-               <p class="prices__right_column">30 ₽</p></span>
-            </li>
-            <li><span class="prices__left_column">Установка клапана металлического
-               <p class="prices__right_column">50 ₽</p></span>
-            </li>
-            <li><span class="prices__left_column">Установка одного датчика давления
-               <p class="prices__right_column">200 ₽</p></span>
-            </li>
-            <li><span class="prices__left_column">Очистка и смазка ступицы, шпилек/болтов
-               <p class="prices__right_column">100 ₽</p></span>
-            </li>
-            <li><span class="prices__left_column">Ремонт камеры (одно повреждение)
-               <p class="prices__right_column">350 ₽</p></span>
-            </li>
-            <li>
-               <span class="prices__left_column">Ремонт прокола жгутом
-                  <p class="prices__right_column">300-600 ₽</p></span>
-            </li>
-            <li>
-               <span class="prices__left_column">Ремонт прокола грибком
-                  <p class="prices__right_column">500-700 ₽</p></span>
-            </li>
-            <li>
-               <span class="prices__left_column">Ремонт бокового пореза шины
-                  <p class="prices__right_column">600-1400 ₽</p></span>
-            </li>
-            <li>
-               <span class="prices__left_column">Утилизация шины
-                  <p class="prices__right_column">400 ₽</p></span>
-            </li>
-            <li>
-               <span class="prices__left_column">Коэф. для внедорожников и низкопрофильной резины
-                  <p class="prices__right_column">1,2</p></span>
-            </li>
-            <li>
-               <span class="prices__left_column">Выезд шиномонтажа (день/ночь)
-                  <p class="prices__right_column">500/800 ₽</p></span>
-            </li>
-            <li>
-               <span class="prices__left_column">Дополнительно оплачивается выезд за КАД
-                  <p class="prices__right_column">500/800 ₽</p></span>
-            </li>
-         </ul>
-         <div class="prices__button">
-            <button class="buttons">Вызвать шиномонтаж</button>
+         <div class="prices__title">
+            <h2 class="main_title" id="id_prices">ЦЕНЫ НА МОБИЛЬНЫЙ ШИНОМОНТАЖ</h2>
          </div>
+         <ul class="prices__list">
+            <li><span>Снятие и установка колеса<p>120 ₽</p></span></li>
+            <li><span>Демонтаж/монтаж шины<p>125 ₽</p></span></li>
+            <li><span>Балансировка колеса с учетом грузиков<p>105 ₽</p></span></li>
+            <li><span>Установка клапана резинового<p>30 ₽</p></span></li>
+            <li><span>Установка клапана металлического<p>50 ₽</p></span></li>
+            <li><span>Установка одного датчика давления<p>200 ₽</p></span></li>
+            <li><span>Очистка и смазка ступицы, шпилек/болтов<p>100 ₽</p></span></li>
+            <li><span>Ремонт камеры (одно повреждение)<p>350 ₽</p></span></li>
+            <li><span>Ремонт прокола жгутом<p>300-600 ₽</p></span></li>
+            <li><span>Ремонт прокола грибком<p>500-700 ₽</p></span></li>
+            <li><span>Ремонт бокового пореза шины<p>600-1400 ₽</p></span></li>
+            <li><span>Утилизация шины<p>400 ₽</p></span></li>
+            <li><span>Коэф. для внедорожников и низкопрофильной резины<p>1,2</p></span></li>
+            <li><span>Выезд шиномонтажа (день/ночь)<p>500/800 ₽</p></span></li>
+            <li><span>Дополнительно оплачивается выезд за КАД<p>500/800 ₽</p></span></li>
+         </ul>
+         <button class="buttons">Вызвать шиномонтаж</button>
       </div>
    </div>
 
    <footer>
       <div class="footer__container">
-         <div class="footer__main">
-               <img src="IMG/Logo.svg" alt="#" class="logo">
-               <ul class="footer__list">
-                  <li><a href="#id_services">Услуги</a></li>
-                  <li><a href="#id_benefits">Преимущества</a></li>
-                  <li><a href="#id_works">Работы</a></li>
-                  <li><a href="#id_prices">Цены</a></li>
-               </ul>
-               <a href="#" class="phone_logo"><img src="IMG/Vector.svg" alt="" class="phone_img">+38-(063)-19-88-496</a>
-         </div>
+            <img src="IMG/Logo.svg" alt="#" class="logo">
+            <ul class="footer__list">
+               <li><a href="#id_services">Услуги</a></li>
+               <li><a href="#id_benefits">Преимущества</a></li>
+               <li><a href="#id_works">Работы</a></li>
+               <li><a href="#id_prices">Цены</a></li>
+            </ul>
+            <div class="footer__phone-number">
+               <img src="IMG/Vector.svg" alt="" class="phone_img">
+               <a href="#">+38-(063)-19-88-496</a>
+            </div>
+            <div class="footer__messangers">
+               <img src="IMG/Avito.svg" alt="#" class="footer__avito">
+               <img src="IMG/instagram.svg" alt="#" class="footer__insta">
+               <a href="#" class="footer_whatsApp">Написать директору в WhatsApp</a>
+            </div>
       </div>
       <div class="footer__info">
-         <div class="horisontal_line"> </div>
+         <div class="horisontal_line"></div>
          <p>2016-2021 © "Шины мигом"</p>
       </div>
    </footer>
