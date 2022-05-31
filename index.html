@@ -3,7 +3,7 @@
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
    <link rel="stylesheet" href="CSS/style.css">
    <title>Shiny</title>
 </head>
@@ -11,15 +11,23 @@
    <header>
       <div class="header__container">
          <div class="header__nav">
-            <img src="IMG/Logo.svg" alt="#" class="nav__logo">
-            <ul class="nav__list">
-               <li><a href="#id_services">Услуги</a></li>
-               <li><a href="#id_benefits">Преимущества</a></li>
-               <li><a href="#id_works">Работы</a></li>
-               <li><a href="#id_prices">Цены</a></li>
-            </ul>
-            <a href="#" class="nav__phone">+38-(063)-19-88-496</a>
-            <a href="#id_callback" class="nav__button"><span>Заказать звонок</span></a>
+            <div class="nav__logo">
+               <img src="IMG/Logo.svg" alt="#" class="nav__logo-img">
+            </div>
+            <div class="nav__row">
+               <ul class="nav__row-list">
+                  <li><a href="#id_services">Услуги</a></li>
+                  <li><a href="#id_benefits">Преимущества</a></li>
+                  <li><a href="#id_works">Работы</a></li>
+                  <li><a href="#id_prices">Цены</a></li>
+               </ul>
+            </div>
+            <div class="nav__phone">
+               <a href="#" class="nav__phone-number">+38-(063)-19-88-496</a>
+            </div>
+            <div class="nav__button">
+               <a href="#id_callback" class="nav__button-space"><span>Заказать звонок</span></a>
+            </div>
          </div>
          <div class="header__main">
             <div class="header__title">
@@ -33,16 +41,16 @@
             </div>
          </div>
          <div class="header__cards">
-            <div class="item-cards">
-               <div class="item-cards__container">
+            <div class="item-cards-first">
                   <div class="item-cards__title">
                      <h3>МОБИЛЬНЫЙ РЕМОНТ И ЗАМЕНА КОЛЕС</h3>
-                     <div class="item-cards__title-line"></div>
+                  </div>
+                  <div class="item-cards__hl">
+
                   </div>
                   <div class="item-cards__text">
                         <p>Услуги выездного шиномонтажа в Харькове для транспортных средств</p>
                   </div>
-               </div>
             </div>
             <div class="item-cards item-cards2">
                <div class="item-cards__price-image">
@@ -82,15 +90,15 @@
    </header>
 
    <div class="services">
-      <div class="services__header">
-         <div class="services__title">
-            <h2 class="main_title" id="id_services">Для юридических лиц</h2>
+      <div class="services__content">
+         <div class="services__header">
+            <div class="services__title">
+               <h2 class="main_title" id="id_services">Для юридических лиц</h2>
+            </div>
+            <div class="services__subtitle">
+               <p><span class="services__stock">Акция!</span>Первое авто бесплатно!</p>
+            </div>
          </div>
-         <div class="services__subtitle">
-            <p><span class="services__stock">Акция!</span>Первое авто бесплатно!</p>
-         </div>
-      </div>
-      <div class="services__main">
          <div class="services__img">
             <img src="IMG/image 17.jpg" alt="#">
          </div>
@@ -134,18 +142,20 @@
    </div>
 
    <div class="callback">
-      <div class="callback__container">
-         <div class="callback__title">
-            <h2 class="main_title" id="id_callback">МОБИЛЬНЫЙ ШИНОМОНТАЖ 24 ЧАСА В СУТКИ</h2>
-         </div>
-         <div class="callback__form">
-            <form action="#">
-               <p class="callback_p mobile">Ваш телефон:</p>
-               <div class="callback__main-form">
-                  <input pattern="\d{10}" type="tel" class="phone-number" maxlength="10" placeholder="0631111111" required>
-                  <button class="callback__form_button" type="submit">Оформить заявку</button>
-               </div>
-            </form>
+      <div class="callback__fone">
+         <div class="callback__container">
+            <div class="callback__title">
+               <h2 class="main_title" id="id_callback">МОБИЛЬНЫЙ ШИНОМОНТАЖ 24 ЧАСА В СУТКИ</h2>
+            </div>
+            <div class="callback__form">
+               <form action="#">
+                  <p class="callback_p mobile">Ваш телефон:</p>
+                  <div class="callback__main-form">
+                     <input pattern="\d{10}" type="tel" class="phone-number" maxlength="10" placeholder="0631111111" required>
+                     <button class="callback__form_button" type="submit">Оформить заявку</button>
+                  </div>
+               </form>
+            </div>
          </div>
       </div>
    </div>
@@ -196,7 +206,9 @@
             <li><span>Выезд шиномонтажа (день/ночь)<p>500/800 ₽</p></span></li>
             <li><span>Дополнительно оплачивается выезд за КАД<p>500/800 ₽</p></span></li>
          </ul>
-         <button class="buttons">Вызвать шиномонтаж</button>
+         <div class="prices__button">
+            <button class="buttons">Вызвать шиномонтаж</button>
+         </div>
       </div>
    </div>
 
