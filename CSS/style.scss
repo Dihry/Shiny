@@ -234,6 +234,9 @@ header{
    .item-cards__price-image {
       background: #DEB905;
    }
+   .item-cards__name{
+      width: 120px;
+   }
 }
 .item-cards3{
    background: #4B5257;
@@ -276,9 +279,8 @@ header{
    margin: 0px 10px;
    &__content {
       width: 100%;
-      display: inline-flex;
+      display: flex;
       flex-wrap: wrap;
-      //justify-content: space-between;
    }
    &__header{
       width: 100%;

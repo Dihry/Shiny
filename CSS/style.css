@@ -442,6 +442,10 @@ header {
   background: #DEB905;
 }
 
+.item-cards2 .item-cards__name {
+  width: 120px;
+}
+
 .item-cards3 {
   background: #4B5257;
   color: #FFFFFF;
@@ -491,9 +495,9 @@ header {
 
 .services__content {
   width: 100%;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
