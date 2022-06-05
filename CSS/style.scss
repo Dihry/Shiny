@@ -425,7 +425,6 @@ header{
             margin: 0px 0px 10px 0px;
          }
          .item-cards__text {
-            //flex: 0 0 auto;
             font-weight: 500;
             font-size: 16px;
             line-height: 22px;
@@ -478,16 +477,21 @@ header{
          @media (max-width:500px) {
             width: 100%;
          }
-         .item-cards__price-image {
-            width: 65px;
-            height: 28px;
+         .item-cards__price {
+            width: 79px;
+            height: 25px;
             border-radius: 5px;
             padding: 8px;
+            font-size: 14px;
+            line-height: 19px;
+            font-weight: 300;
+            display: flex;
+            justify-content: center;
+            align-items: center;
          }
          .item-cards__name{
             margin: 13px 0px 0px 0px;
             flex: 1 1 auto;
-
          }
          &:hover {
             box-shadow: 0px 0px 16px rgb(152, 196, 230);
@@ -500,21 +504,21 @@ header{
 .item-cards2 {
    background: #FFD300;
    color: #000000;
-   .item-cards__price-image {
+   .item-cards__price {
       background: #DEB905;
    }
 }
 .item-cards3{
    background: #4B5257;
    color: #FFFFFF;
-   .item-cards__price-image {
+   .item-cards__price {
       background: #B0B0B0;
    }
 }
 .item-cards4{
    background-color: #5BBFC8;
    color: #000000;
-   .item-cards__price-image {
+   .item-cards__price {
       background: #49A1A9;
    }
 }
@@ -756,8 +760,11 @@ header{
       }
       li {
          border-bottom: 1px dotted black;
-         padding: 0px 0px 20px 0px;
+         padding: 0px 0px 40px 0px;
          max-width: 260px;
+         &:first-child{
+            padding: 0px 0px 20px 0px;
+         }
          &:hover {
             color: rgb(200, 186, 0);
          }
@@ -910,7 +917,6 @@ header{
       li {
          padding-left: 15px;
          &:hover{
-            //text-decoration: underline;
             font-weight: 600;
          }
       }

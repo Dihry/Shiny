@@ -1,8 +1,9 @@
+/*
 $(document).ready(function() {
    $('.nav__click-burger').click(function(event){
       $('.nav__click-burger,.burger__menu').toggleClass('active');
    });
-});
+});*/
 
 /*
 let header__burger = document.querySelector('.header__burger');

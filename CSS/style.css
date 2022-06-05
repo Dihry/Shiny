@@ -870,11 +870,23 @@ header {
   }
 }
 
-.header__container .header__cards .item-cards .item-cards__price-image {
-  width: 65px;
-  height: 28px;
+.header__container .header__cards .item-cards .item-cards__price {
+  width: 79px;
+  height: 25px;
   border-radius: 5px;
   padding: 8px;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__container .header__cards .item-cards .item-cards__name {
@@ -894,7 +906,7 @@ header {
   color: #000000;
 }
 
-.item-cards2 .item-cards__price-image {
+.item-cards2 .item-cards__price {
   background: #DEB905;
 }
 
@@ -903,7 +915,7 @@ header {
   color: #FFFFFF;
 }
 
-.item-cards3 .item-cards__price-image {
+.item-cards3 .item-cards__price {
   background: #B0B0B0;
 }
 
@@ -912,7 +924,7 @@ header {
   color: #000000;
 }
 
-.item-cards4 .item-cards__price-image {
+.item-cards4 .item-cards__price {
   background: #49A1A9;
 }
 
@@ -1299,8 +1311,12 @@ header {
 
 .benefits .benefit__right-options li {
   border-bottom: 1px dotted black;
-  padding: 0px 0px 20px 0px;
+  padding: 0px 0px 40px 0px;
   max-width: 260px;
+}
+
+.benefits .benefit__right-options li:first-child {
+  padding: 0px 0px 20px 0px;
 }
 
 .benefits .benefit__right-options li:hover {
