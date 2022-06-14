@@ -10,55 +10,30 @@
 </head>
 <body>
    <header>
-      <div class="header__contant">
-         <div class="header__container">
+      <div class="header__content">
+         <div class="container">
             <div class="header__nav">
                <div class="nav__logo">
                   <img src="IMG/Logo.svg" alt="#" class="nav__logo-img">
                </div>
-               <div class="nav__row">
-                  <ul class="nav__row-list">
-                     <li><a href="#id_services">Услуги</a></li>
-                     <li><a href="#id_benefits">Преимущества</a></li>
-                     <li><a href="#id_works">Работы</a></li>
-                     <li><a href="#id_prices">Цены</a></li>
-                  </ul>
+               <div class="nav__burger">
+                  <span></span>
                </div>
-               <div class="nav__phone">
-                  <a href="#" class="nav__phone-number">063-19-88-496</a>
-               </div>
-               <div class="nav__button">
-                  <a href="#id_callback" class="nav__button-space"><span>Заказать звонок</span></a>
-               </div>
-               <div class="nav__click-burger active">
-                  <div class="burger-hl"></div>
-                  <div class="burger-hl"></div>
-                  <div class="burger-hl"></div>
-               </div>
-            </div>
-            <div class="burger__menu">
-               <div class="burger__logo">
-                  <div class="logo">
-                     <img src="IMG/Logo.svg" alt="#" class="nav__logo-img">
+               <div class="nav__menu">
+                  <div class="nav__row">
+                     <ul class="nav__row-list">
+                        <li><a href="#id_services">Услуги</a></li>
+                        <li><a href="#id_benefits">Преимущества</a></li>
+                        <li><a href="#id_works">Работы</a></li>
+                        <li><a href="#id_prices">Цены</a></li>
+                     </ul>
                   </div>
-                  <div class="burger__close">
-                     <a href=""><img src="IMG/close_burger.svg" alt="#"></a>
+                  <div class="nav__phone">
+                     <a href="#" class="nav__phone-number">063-19-88-496</a>
                   </div>
-               </div>
-            
-               <div class="burger__menu-row">
-                  <ul class="burger__menu-row-list">
-                     <li><a href="#id_services">Услуги</a></li>
-                     <li><a href="#id_benefits">Преимущества</a></li>
-                     <li><a href="#id_works">Работы</a></li>
-                     <li><a href="#id_prices">Цены</a></li>
-                  </ul>
-               </div>
-               <div class="burger__menu-phone">
-                  <a href="#" class="nav__phone-number">063-19-88-496</a>
-               </div>
-               <div class="burger__menu-button">
-                  <a href="#id_callback" class="burger__button-space"><span>Заказать звонок</span></a>
+                  <div class="nav__button">
+                     <a href="#id_callback" class="nav__button-space"><span>Заказать звонок</span></a>
+                  </div>
                </div>
             </div>
             <div class="header__main">
@@ -79,7 +54,6 @@
                      <h3>МОБИЛЬНЫЙ РЕМОНТ И ЗАМЕНА КОЛЕС</h3>
                   </div>
                   <div class="item-cards__hl">
-
                   </div>
                   <div class="item-cards__text">
                      <p>Услуги выездного шиномонтажа в Харькове для транспортных средств</p>
@@ -223,76 +197,174 @@
          <div class="prices__title">
             <h2 class="main_title" id="id_prices">ЦЕНЫ НА МОБИЛЬНЫЙ ШИНОМОНТАЖ</h2>
          </div>
-         <!--
          <form action="#" class="prices__form">
+            <ul class="prices__radius-list">
+               <li><a class="link_r13 marked">R 13-15</a></li>
+               <li><a class="link_r16">R 16</a></li>
+               <li><a class="link_r17">R 17</a></li>
+               <li><a class="link_r18">R 18</a></li>
+               <li><a class="link_r19">R 19</a></li>
+               <li><a class="link_r20">R 20</a></li>
+               <li><a class="link_r21">R 21-22</a></li>
+            </ul>
             <label for="vol">Выберите Ø колёс</label>
             <input type="range" name="vol" min="1" max="7" value="1" class="test">
-         </form>-->
+         </form>
+         <form action="#" class="dropdown_form">
+            <label for="vol">Выберите Ø колёс</label>
+            <select class="select_radius" >
+               <option value="1option">R 13-15</option>
+               <option value="2option">R 16</option>
+               <option value="3option">R 17</option>
+               <option value="4option">R 18</option>
+               <option value="5option">R 19</option>
+               <option value="6option">R 20</option>
+               <option value="7option">R 21-22</option>
+            </select>
+         </form>
          <ul class="prices__list">
-            <li>
-               <p class="prices_first-p">Снятие и установка колеса</p>
-               <p class="prices_second-p">120 </p></li>
-            <li>
-               <p class="prices_first-p">Демонтаж/монтаж шины</p>
-               <p class="prices_second-p">125 </p>
-            </li>
-            <li>
-               <p class="prices_first-p">Балансировка колеса с учетом грузиков</p>
-               <p class="prices_second-p">105 </p>
-            </li>
-            <li>
-               <p class="prices_first-p">Установка клапана резинового</p>
-               <p class="prices_second-p">30 </p>
-            </li>
-            <li>
-               <p class="prices_first-p">Установка клапана металлического</p>
-               <p class="prices_second-p">50 </p>
-            </li>
-            <li>
-               <p class="prices_first-p">Установка одного датчика давления</p>
-               <p class="prices_second-p">200 </p>
-            </li>
-            <li>
-               <p class="prices_first-p">Очистка и смазка ступицы, шпилек/болтов</p>
-               <p class="prices_second-p">100 </p>
-            </li>
-            <li>
-               <p class="prices_first-p">Ремонт камеры (одно повреждение)</p>
-               <p class="prices_second-p">350 </p>
-            </li>
-            <li>
-               <p class="prices_first-p">Ремонт прокола жгутом</p>
-               <p class="prices_second-p">300-600 </p>
-            </li>
-            <li>
-               <p class="prices_first-p">Ремонт прокола грибком</p>
-               <p class="prices_second-p">500-700 </p>
-            </li>
-            <li>
-               <p class="prices_first-p">Ремонт бокового пореза шины</p>
-               <p class="prices_second-p">600-1400 </p>
-            </li>
-            <li>
-               <p class="prices_first-p">Утилизация шины</p>
-               <p class="prices_second-p">400 </p>
-            </li>
-            <li>
-               <p class="prices_first-p">Коэф. для внедорожников и низкопрофильной резины</p>
-               <p class="prices_second-p prices_second-p-cof">1,2</p>
-            </li>
-            <li>
-               <p class="prices_first-p">Выезд шиномонтажа (день/ночь)</p>
-               <p class="prices_second-p">500/800 </p>
-            </li>
-            <li>
-               <p class="prices_first-p">Дополнительно оплачивается выезд за город</p>
-               <p class="prices_second-p">500/800 </p>
-            </li>
+            <ul class="prices__list-name">
+               <li><p class="prices__name">Снятие и установка колеса</p></li>
+               <li><p class="prices__name">Демонтаж/монтаж шины</p></li>
+               <li><p class="prices__name">Балансировка колеса с учетом грузиков</p></li>
+               <li><p class="prices__name">Установка клапана резинового</p></li>
+               <li><p class="prices__name">Установка клапана металлического</p></li>
+               <li><p class="prices__name">Установка одного датчика давления</p></li>
+               <li><p class="prices__name">Очистка и смазка ступицы, шпилек/болтов</p></li>
+               <li><p class="prices__name">Ремонт камеры (одно повреждение)</p></li>
+               <li><p class="prices__name">Ремонт прокола жгутом</p></li>
+               <li><p class="prices__name">Ремонт прокола грибком</p></li>
+               <li><p class="prices__name">Ремонт бокового пореза шины</p></li>
+               <li><p class="prices__name">Утилизация шины</p></li>
+               <li><p class="prices__name">Коэф. для внедорожников и низкопрофильной резины</p></li>
+               <li><p class="prices__name">Выезд шиномонтажа (день/ночь)</p></li>
+               <li><p class="prices__name">Дополнительно оплачивается выезд за город</p></li>
+            </ul>
+            <ul class="prices__list-count radius-13 open">
+               <li><p>120</p></li>
+               <li><p>125</p></li>
+               <li><p>105</p></li>
+               <li><p>30</p></li>
+               <li><p>50</p></li>
+               <li><p>200</p></li>
+               <li><p>100</p></li>
+               <li><p>350</p></li>
+               <li><p>300-600</p></li>
+               <li><p>500-700</p></li>
+               <li><p>600-1400</p></li>
+               <li><p>400</p></li>
+               <li><p class="cof">1,2</p></li>
+               <li><p>500/800</p></li>
+               <li><p>500/800</p></li>
+            </ul>
+            <ul class="prices__list-count radius-16">
+               <li><p>140</p></li>
+               <li><p>140</p></li>
+               <li><p>115</p></li>
+               <li><p>35</p></li>
+               <li><p>55</p></li>
+               <li><p>225</p></li>
+               <li><p>110</p></li>
+               <li><p>400</p></li>
+               <li><p>350-700</p></li>
+               <li><p>500-750</p></li>
+               <li><p>700-1500</p></li>
+               <li><p>450</p></li>
+               <li><p class="cof">1,2</p></li>
+               <li><p>600/900</p></li>
+               <li><p>600/900</p></li>
+            </ul>
+            <ul class="prices__list-count radius-17">
+               <li><p>160</p></li>
+               <li><p>160</p></li>
+               <li><p>125</p></li>
+               <li><p>40</p></li>
+               <li><p>60</p></li>
+               <li><p>250</p></li>
+               <li><p>120</p></li>
+               <li><p>450</p></li>
+               <li><p>400-700</p></li>
+               <li><p>600-800</p></li>
+               <li><p>800-1600</p></li>
+               <li><p>500</p></li>
+               <li><p class="cof">1,2</p></li>
+               <li><p>700/1000</p></li>
+               <li><p>700/1000</p></li>
+            </ul>
+            <ul class="prices__list-count radius-18">
+               <li><p>180</p></li>
+               <li><p>175</p></li>
+               <li><p>135</p></li>
+               <li><p>45</p></li>
+               <li><p>65</p></li>
+               <li><p>275</p></li>
+               <li><p>130</p></li>
+               <li><p>500</p></li>
+               <li><p>500-850</p></li>
+               <li><p>650-850</p></li>
+               <li><p>900-1800</p></li>
+               <li><p>550</p></li>
+               <li><p class="cof">1,2</p></li>
+               <li><p>800/1200</p></li>
+               <li><p>800/1200</p></li>
+            </ul>
+            <ul class="prices__list-count radius-19">
+               <li><p>200</p></li>
+               <li><p>200</p></li>
+               <li><p>150</p></li>
+               <li><p>50</p></li>
+               <li><p>75</p></li>
+               <li><p>300</p></li>
+               <li><p>150</p></li>
+               <li><p>600</p></li>
+               <li><p>600-900</p></li>
+               <li><p>700-900</p></li>
+               <li><p>1000-2000</p></li>
+               <li><p>600</p></li>
+               <li><p class="cof">1,2</p></li>
+               <li><p>900/1300</p></li>
+               <li><p>900/1400</p></li>
+            </ul>
+            <ul class="prices__list-count radius-20">
+               <li><p>220</p></li>
+               <li><p>225</p></li>
+               <li><p>175</p></li>
+               <li><p>60</p></li>
+               <li><p>85</p></li>
+               <li><p>350</p></li>
+               <li><p>175</p></li>
+               <li><p>700</p></li>
+               <li><p>700-1000</p></li>
+               <li><p>750-1000</p></li>
+               <li><p>1200-2500</p></li>
+               <li><p>700</p></li>
+               <li><p class="cof">1.2</p></li>
+               <li><p>1000/1500</p></li>
+               <li><p>1000/1600</p></li>
+            </ul>
+            <ul class="prices__list-count radius-21">
+               <li><p>240</p></li>
+               <li><p>250</p></li>
+               <li><p>200</p></li>
+               <li><p>75</p></li>
+               <li><p>100</p></li>
+               <li><p>400</p></li>
+               <li><p>200</p></li>
+               <li><p>800</p></li>
+               <li><p>800-1200</p></li>
+               <li><p>800-1000</p></li>
+               <li><p>1500-3000</p></li>
+               <li><p>800</p></li>
+               <li><p class="cof">1,2</p></li>
+               <li><p>1200/1750</p></li>
+               <li><p>1200/2000</p></li>
+            </ul>
          </ul>
          <div class="prices__button">
             <button class="buttons">Вызвать шиномонтаж</button>
          </div>
       </div>
+      
    </div>
 
    <footer>
@@ -309,8 +381,8 @@
                <a href="#">+38-(063)-19-88-496</a>
             </div>
             <div class="footer__messangers">
-               <img src="IMG/Avito.svg" alt="#" class="footer__avito">
-               <img src="IMG/instagram.svg" alt="#" class="footer__insta">
+               <a href="#"><img src="IMG/Avito.svg" alt="#" class="footer__avito"></a>
+               <a href=""><img src="IMG/instagram.svg" alt="#" class="footer__insta"></a>
             </div>
             <div class="footer__whatsapp">
                <a href="#" class="footer_whatsapp_button">Написать директору в WhatsApp</a>
@@ -322,5 +394,7 @@
       </div>
    </footer>
    <script src="js/burger.js"></script>
+   <script src="js/range.js"></script>
+   <script src="js/dropdown.js"></script>
 </body>
 </html>
