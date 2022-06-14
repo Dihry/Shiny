@@ -399,11 +399,15 @@ header {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
     top: 23px;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
   }
   .header__nav .nav__burger.active::after {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
     bottom: 23px;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
   }
 }
 

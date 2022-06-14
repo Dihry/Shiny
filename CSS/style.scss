@@ -196,7 +196,7 @@ header{
             height: 2px;
          }
          &::before {
-            top: 12px;            
+            top: 12px;
          }
          &::after {
             bottom: 12px;
@@ -204,10 +204,12 @@ header{
          &.active::before {
             transform: rotate(45deg);
             top: 23px;
+            transition: all 0.5s ease 0s;
          }
          &.active::after {
             transform: rotate(-45deg);
             bottom: 23px;
+            transition: all 0.5s ease 0s;
          }
       }
    }
