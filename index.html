@@ -32,7 +32,7 @@
                      <a href="#" class="nav__phone-number">063-19-88-496</a>
                   </div>
                   <div class="nav__button">
-                     <a href="#id_callback" class="nav__button-space"><span>Заказать звонок</span></a>
+                     <a href="#" class="nav__button-space popup-link"><span>Заказать звонок</span></a>
                   </div>
                </div>
             </div>
@@ -118,7 +118,7 @@
                   <li><p>Заключение договора</p></li>
                   <li><p>Оплата после выполнения работ</p></li>
                </ul>
-               <form action="#" class="services__form">
+               <form action="#" class="services__form ">
                   <p class="form_p mobile">Ваш телефон:</p>
                   <input pattern="\d{10}" type="tel" class="phone_number" maxlength="10" placeholder="0631111111" required>
                   <button type="submit" class="services__submit">Оформить заявку</button>
@@ -408,8 +408,24 @@
          <p>2016-2021 © "Шины мигом"</p>
       </div>
    </footer>
+   <div id="popup" class="popup">
+      <div class="popup__body">
+         <div class="popup__content">
+            <a href="#" class="popup__close close-popup">X</a>
+             <div class="popup__title">
+               <h1>МОБИЛЬНЫЙ ШИНОМОНТАЖ 24 ЧАСА В СУТКИ</h1>
+             </div>
+            <form action="#" class="services__form popup__form">
+               <p class="form_p popup_p">Ваш телефон:</p>
+               <input pattern="\d{10}" type="tel" class="phone_number" maxlength="10" placeholder="0631111111" required>
+               <button type="submit" class="services__submit">Оформить заявку</button>
+            </form>
+         </div>
+      </div>
+   </div>
    <script src="JS/burger.js"></script>
    <script src="JS/range.js"></script>
    <script src="JS/dropdown.js"></script>
+   <script src="JS/popup.js"></script>
 </body>
 </html>

@@ -896,102 +896,6 @@ header {
 
 .services {
   padding: 0px 10px;
-  /*
-   .services__options {
-      display: flex;
-      flex-direction: column;
-      padding: 50px 0px 0px 70px;
-      @media (max-width:1300px) {
-         padding: 0px 0px 0px 50px;
-      }/*
-      @media (max-width:1024px) {
-         padding: 20px 0px 20px 40px;
-         margin: 0 auto;
-      }
-      @media (max-width:426px) {
-         padding-left: 0px;
-         margin: 0 auto;
-      }
-      
-      .services__list {
-         font-size: 22px;
-         line-height: 45px;
-         margin: 0px 0px 45px 0px;
-         font-weight: 600;
-         /*
-         @media (max-width:1150px) {
-            margin: 0px 0px 10px 0px;
-         }
-         
-         @media (max-width:768px) {
-            font-size: 20px;
-            line-height: 40px;
-         }
-
-         @media (max-width:550px) {
-            font-size: 18px;
-            line-height: 30px;
-         }
-
-         @media (max-width:400px) {
-            font-size: 16px;
-            line-height: 25px;
-         }
-
-         li {
-            display: flex;
-            flex-wrap: wrap;
-            p {
-               padding-left: 5px;
-               display: flex;
-               flex-wrap: wrap;
-               margin: 0px 0px 0px 10px;
-            }
-         }
-         li:before {
-            content: ' ';
-            top: 10px;
-            left: 0px;
-            background-color: #171717;
-            width: 5px;
-            height: 25px;
-         }
-      }
-      .services__form {
-         .form_p {
-            margin-left: 124px - 70px;
-         }
-         .phone_number {
-            display: block;
-            margin: 0px 0px 24px 26px;
-            width: 300px;
-            height: 40px;
-            font-size: 24px;
-            text-align: center;
-            border-radius: 5px;
-         }
-         .services__submit {
-            margin: 0px 0px 40px 76px;
-            width: 200px;
-            height: 40px;
-            background-color: #FFD300;
-            border: 0px;
-            border-radius: 5px;
-            font-size: 16px;
-            line-height: 22px;
-            font-weight: 600;
-            &:hover {
-               background: #d0571f;
-            }
-            @media (max-width:1300px) {
-               margin: 0px 0px 30px 76px;
-            }
-            @media (max-width:1150px) {
-               margin: 0px 0px 0px 76px;
-            }
-         }
-      }
-   }/**/
 }
 
 .services__content {
@@ -1225,22 +1129,22 @@ header {
   padding-left: 15px;
 }
 
-.services .services__main .services__form {
+.services__form {
   padding-left: 26px;
 }
 
 @media (max-width: 1024px) {
-  .services .services__main .services__form {
+  .services__form {
     margin: 0px auto;
     padding: 0px;
   }
 }
 
-.services .services__main .services__form .form_p {
+.services__form .form_p {
   padding: 0px 0px 8px 28px;
 }
 
-.services .services__main .services__form .phone_number {
+.services__form .phone_number {
   display: block;
   width: 300px;
   height: 40px;
@@ -1250,7 +1154,7 @@ header {
   margin: 0px 0px 24px 0px;
 }
 
-.services .services__main .services__form .services__submit {
+.services__form .services__submit {
   margin: 0px 0px 0px 50px;
   width: 200px;
   height: 40px;
@@ -1262,7 +1166,7 @@ header {
   font-weight: 600;
 }
 
-.services .services__main .services__form .services__submit:hover {
+.services__form .services__submit:hover {
   background: #d0571f;
 }
 
@@ -2118,6 +2022,7 @@ footer .footer__content .footer__phone-number {
         -ms-flex-order: 2;
             order: 2;
     margin: 0px 0px 15px 0px;
+    padding: 0px;
   }
 }
 
@@ -2188,29 +2093,6 @@ footer .footer__content .footer__messangers {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  /*
-         .footer__facebook{
-            img{
-               width: 20px;
-               height: 20px;
-               margin: 0px 10px;
-               &:hover {
-                  width: 30px;
-                  height: 30px;
-               }
-            }
-         }
-         .footer__twitter{
-            img{
-               width: 20px;
-               height: 20px;
-               margin: 0px 10px 0px 0px;
-               &:hover{
-                  width: 30px;
-                  height: 30px;
-               }
-            }
-         }*/
 }
 
 @media (max-width: 768px) {
@@ -2221,6 +2103,7 @@ footer .footer__content .footer__messangers {
     -webkit-box-ordinal-group: 6;
         -ms-flex-order: 5;
             order: 5;
+    padding-right: 0px;
   }
 }
 
@@ -2247,7 +2130,7 @@ footer .footer__content .footer__messangers .footer__twitter:hover img,
 footer .footer__content .footer__messangers .footer__facebook:hover img,
 footer .footer__content .footer__messangers .footer__instagram:hover img {
   width: 40px;
-  height: 4git 0px;
+  height: 40px;
 }
 
 footer .footer__info {
@@ -2262,4 +2145,73 @@ footer .horisontal_line {
   height: 1px;
   background-color: #ffffff;
   margin: 0px 0px 5px 0px;
+}
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(70, 68, 68, 0.85);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.popup__body {
+  min-height: 100%;
+  max-width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px auto;
+}
+
+.popup__title {
+  font-size: 45px;
+  line-height: 55px;
+  color: #fff;
+  padding-bottom: 30px;
+}
+
+.popup_p {
+  color: #fff;
+}
+
+.popup .popup__close {
+  font-size: 28px;
+  color: #fff;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding-bottom: 20px;
+}
+
+.popup.open .popup__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popup.open {
+  opacity: 1;
+  visibility: visible;
 }
