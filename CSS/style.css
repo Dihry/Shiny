@@ -275,7 +275,13 @@ header {
 
 @media (max-width: 500px) {
   header {
-    padding: 0px 0px 900px 0px;
+    padding: 0px 0px 910px 0px;
+  }
+}
+
+@media (max-width: 425px) {
+  header {
+    padding: 0px 0px 930px 0px;
   }
 }
 
@@ -580,6 +586,18 @@ header {
   }
 }
 
+@media (max-width: 500px) {
+  .header__main {
+    margin: 0px 0px 95px 0px;
+  }
+}
+
+@media (max-width: 425px) {
+  .header__main {
+    margin: 0px 0px 80px 0px;
+  }
+}
+
 .header__main .header__title {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
@@ -673,7 +691,6 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    max-width: 100%;
   }
 }
 
@@ -724,7 +741,9 @@ header {
   .header__cards .item-cards-first {
     padding: 60px 20px 30px;
     margin: 0px 0px 10px 0px;
-    width: 100%;
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
   }
 }
 
@@ -832,7 +851,15 @@ header {
 
 @media (max-width: 500px) {
   .header__cards .item-cards {
-    width: 100%;
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
+    min-height: 210px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 30px 40px;
   }
 }
 
@@ -855,6 +882,14 @@ header {
           align-items: center;
 }
 
+@media (max-width: 500px) {
+  .header__cards .item-cards .item-cards__price {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+  }
+}
+
 .header__cards .item-cards .item-cards__name {
   margin: 13px 0px 0px 0px;
   -webkit-box-flex: 1;
@@ -862,9 +897,28 @@ header {
           flex: 1 1 auto;
 }
 
+@media (max-width: 500px) {
+  .header__cards .item-cards .item-cards__name {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 50%;
+  }
+}
+
 .header__cards .item-cards:hover {
   -webkit-box-shadow: 0px 0px 16px #98c4e6;
           box-shadow: 0px 0px 16px #98c4e6;
+}
+
+@media (max-width: 500px) {
+  .header__cards .item-cards .item-cards__car-image {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
 }
 
 .item-cards2 {

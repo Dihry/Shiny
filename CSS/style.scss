@@ -117,7 +117,10 @@ header{
       padding: 0px 0px 500px 0px;
    }
    @media (max-width:500px) {
-      padding: 0px 0px 900px 0px;
+      padding: 0px 0px 910px 0px;
+   }
+   @media (max-width:425px) {
+      padding: 0px 0px 930px 0px;
    }
 }
 .header__content{
@@ -319,6 +322,12 @@ header{
    @media (max-width:768px) {
       margin: 0px 0px 75px 0px;
    }
+   @media (max-width:500px) {
+      margin: 0px 0px 95px 0px;
+   }
+   @media (max-width:425px) {
+      margin: 0px 0px 80px 0px;
+   }
    .header__title{
       flex: 0 1 auto;
       max-width: 800px;
@@ -377,7 +386,7 @@ header{
    @media (max-width:500px) {
       flex-direction: column;
       align-items: center;
-      max-width: 100%;
+      //max-width: 100%;
    }
    .item-cards-first {
       background: linear-gradient(108.11deg, #e1dddd 1%, rgba(247, 246, 246, 0.777) 1%), url(../IMG/fist-card_backgound.jpg) 0 0/cover no-repeat;
@@ -406,7 +415,7 @@ header{
       @media (max-width:500px){
          padding: 60px 20px 30px;
          margin: 0px 0px 10px 0px;
-         width: 100%;
+         align-self: stretch;
       }
       @media (max-width:425px){
          margin-top: 0px;
@@ -473,7 +482,11 @@ header{
          padding-left: 30px;
       }
       @media (max-width:500px) {
-         width: 100%;
+         align-self: stretch;
+         min-height: 210px;
+         flex-wrap: wrap;
+         justify-content: space-around;
+         padding: 30px 40px ;
       }
       .item-cards__price {
          width: 79px;
@@ -486,13 +499,26 @@ header{
          display: flex;
          justify-content: center;
          align-items: center;
+         @media (max-width:500px){
+            flex: 0 1 50%;
+         }
       }
       .item-cards__name{
          margin: 13px 0px 0px 0px;
          flex: 1 1 auto;
+         @media (max-width:500px) {
+            flex: 0 1 50%;
+            flex-wrap: wrap;
+            max-width: 50%;
+         }
       }
       &:hover {
          box-shadow: 0px 0px 16px rgb(152, 196, 230);
+      }
+      .item-cards__car-image{
+         @media (max-width:500px){
+            flex: 0 1 100%;
+         }
       }
    }
 }
